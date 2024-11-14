@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h2>Student Enrollment Form</h2>
+        </div>
+
+        <form id="empform" method="get">
+            <!-- Roll No -->
+            <div class="form-group">
+                <label for="rollNo">Roll No:</label>
+                <input type="text" id="rollNo" class="form-control" onchange="getEmp()" placeholder="Enter Roll No">
+            </div>
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" class="form-control">
+            </div>
+
+            <!-- Class -->
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="number" id="class" class="form-control">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="birthDate">DOB:</label>
+                <input type="date" id="birthDate" class="form-control">
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" class="form-control">
+            </div>
+
+            <!-- Enrollment Date -->
+            <div class="form-group">
+                <label for="enrollmentDate">Enrollment Date:</label>
+                <input type="date" id="enrollmentDate" class="form-control">
+            </div>
+
+            <!-- Buttons -->
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()">Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()">Update</button>
+                <button type="button" class="btn btn-lg btn-danger" id="reset" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- JPDB Commons Script -->
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <!-- Custom Script -->
+    <script type="text/javascript" src="javascript/index.js"></script>
+</body>
+</html>
