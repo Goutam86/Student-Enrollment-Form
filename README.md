@@ -58,3 +58,15 @@ POST /api/iml
   "address": "123 Main St",
   "enrollmentDate": "2024-11-15"
 }
+```
+
+# Project Status
+**Active Development:** The project is still under active development with future updates planned to improve usability and integrate more features like search and sorting.
+
+# Sources
+JsonPowerDB Documentation
+
+Bootstrap 4
+
+jQuery Documentation
+
